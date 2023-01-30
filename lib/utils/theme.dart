@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 const kPrimaryColor = Color(0xffE9E9E9);
+const kTextPrimaryColor = Color(0xff4F4141);
 const kSecondColor = Color(0xff44BD32);
 const kBlack = Color(0xff000000);
 const kWhite = Color(0xffffffff);
@@ -17,23 +18,33 @@ const kTitle = TextStyle(
 
 const kSubtitle = TextStyle(
   color: Color(0xff4F4141),
-  fontSize: 36,
-  fontWeight: FontWeight.w600,
+  fontSize: 12,
+  // fontWeight: FontWeight.w600,
   fontFamily: 'Poppins',
 );
 
-const kTitleMenu = TextStyle(
-  color: Color(0xff4F4141),
-  fontSize: 20,
-  fontWeight: FontWeight.w600,
-  fontFamily: 'Poppins',
-);
+kTitleMenu(Color color) {
+  return TextStyle(
+    color: color,
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'Poppins',
+  );
+}
+
 const kMenu = TextStyle(
   color: Color(0xffffffff),
   fontSize: 20,
   fontWeight: FontWeight.w700,
   fontFamily: 'Poppins',
 );
+
+kMenuDynamic(size) => TextStyle(
+      color: Color(0xffffffff),
+      fontSize: size,
+      fontWeight: FontWeight.w600,
+      fontFamily: 'Poppins',
+    );
 
 const kSubtitleMenu = TextStyle(
   color: Color(0xffffffff),
