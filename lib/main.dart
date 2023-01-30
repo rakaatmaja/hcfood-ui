@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:hcfood_ui/pages/signin.dart';
+import 'package:hcfood_ui/pages/nav.dart';
 
 void main() => runApp(const MyApp());
 
@@ -30,17 +28,13 @@ class _HomeState extends State<Splash> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 3)).then((value) => Navigator.push(
-        context, MaterialPageRoute(builder: ((context) => const SignIn()))));
+        context, MaterialPageRoute(builder: ((context) => const Nav()))));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: const Center(
-          child: const Text('HCFOOD')
-        ),
-      ),
+      body: Center(child: Image.asset('assets/images/logo.png')),
     );
   }
 }

@@ -1,10 +1,9 @@
-
 import 'package:flutter/material.dart';
-import 'package:hcfood_ui/pages/signup.dart';
+import 'package:hcfood_ui/pages/signin.dart';
 import 'package:hcfood_ui/utils/theme.dart';
 
-class SignIn extends StatelessWidget {
-  const SignIn({Key? key}) : super(key: key);
+class SignUp extends StatelessWidget {
+  const SignUp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +16,7 @@ class SignIn extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'Masuk',
+                'Daftar',
                 style: kTitle,
               ),
               const SizedBox(
@@ -29,11 +28,21 @@ class SignIn extends StatelessWidget {
                 ),
                 child: const TextField(
                   decoration: InputDecoration(
-                    hintText: 'example@gmail.com',
+                    hintText: 'User',
                   ),
                 ),
               ),
               const SizedBox(height: 20),
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: const TextField(
+                  decoration: InputDecoration(
+                    hintText: 'example@gmail.com',
+                  ),
+                ),
+              ),
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
@@ -80,16 +89,16 @@ class SignIn extends StatelessWidget {
                 onTap: () => Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                    builder: ((context) => const SignUp()),
+                    builder: ((context) => const SignIn()),
                   ),
                 ),
                 child: RichText(
                   text: const TextSpan(children: [
                     TextSpan(
-                        text: 'Tidak Punya Akun ?   ',
+                        text: 'Sudah Punya Akun ?   ',
                         style: TextStyle(color: Colors.black)),
                     TextSpan(
-                        text: 'Daftar',
+                        text: 'Login',
                         style: TextStyle(
                           color: Colors.blue,
                         ))
