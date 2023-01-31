@@ -36,27 +36,28 @@ class _DetailProdukState extends State<DetailProduk> {
                 ),
               ),
               Align(
-                  alignment: Alignment.centerLeft,
-                  child: Container(
-                    margin: const EdgeInsets.only(left: 20, top: 5),
-                    height: 55,
-                    width: 55,
-                    child: IconButton(
-                      onPressed: () => Navigator.pop(context),
-                      icon: const Icon(Icons.arrow_back_ios),
-                      color: const Color(0xffC5C5FF),
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      color: kSecondColor,
-                      boxShadow: const <BoxShadow>[
-                        BoxShadow(
-                            color: Colors.black38,
-                            blurRadius: 20,
-                            offset: Offset(2, 5))
-                      ],
-                    ),
-                  )),
+                alignment: Alignment.centerLeft,
+                child: Container(
+                  margin: const EdgeInsets.only(left: 20, top: 5),
+                  height: 55,
+                  width: 55,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    color: kSecondColor,
+                    boxShadow: const <BoxShadow>[
+                      BoxShadow(
+                          color: Colors.black38,
+                          blurRadius: 20,
+                          offset: Offset(2, 5))
+                    ],
+                  ),
+                  child: IconButton(
+                    onPressed: () => Navigator.pop(context),
+                    icon: const Icon(Icons.arrow_back_ios),
+                    color: const Color(0xffC5C5FF),
+                  ),
+                ),
+              ),
             ],
           ),
         ),

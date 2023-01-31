@@ -40,7 +40,7 @@ const kMenu = TextStyle(
 );
 
 kMenuDynamic(size) => TextStyle(
-      color: Color(0xffffffff),
+      color: const Color(0xffffffff),
       fontSize: size,
       fontWeight: FontWeight.w600,
       fontFamily: 'Poppins',

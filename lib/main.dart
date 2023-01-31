@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:hcfood_ui/pages/detailproduk.dart';
 
 import 'package:hcfood_ui/pages/nav.dart';
-import 'package:hcfood_ui/pages/sukses.dart';
 import 'package:hcfood_ui/utils/theme.dart';
 
 void main() => runApp(const MyApp());
