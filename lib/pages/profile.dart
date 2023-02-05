@@ -5,15 +5,17 @@ class Profile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Scaffold(
-        body: Column(
+    return Scaffold(
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(200),
+        child: AppBar(
+          title: Text('Profile'),
           
-          children: [
-
-          ]
-        ), 
-      )
+        ),
+      ),
+      body: Column(
+        children: const [],
+      ),
     );
   }
 }
